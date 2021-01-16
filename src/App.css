@@ -1,0 +1,75 @@
+.warm {
+  background-image: url('./assests/warm.jpg');
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  background-position: left;
+ 
+}
+.cold {
+  background-image: url('./assests/cold.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  color: aliceblue !important;
+}
+body{
+    margin: 0px;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+    transition-duration: 2s ease;
+    
+}
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .search-box{
+    width: 60% !important;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+  display: block;
+  width: 60% ;
+  margin: 5% 0 75px !important;
+  padding: 15px;
+ color: aliceblue;
+  transition: 0.4s ease;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  font-size: 20px;
+}
+.search-bar:focus{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+@media(max-width:768px){
+    .search-box{
+        width: 90% !important;
+        
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    .search-bar{
+        width: max-content;
+    }
+}

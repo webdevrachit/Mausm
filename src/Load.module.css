@@ -1,0 +1,42 @@
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 50;
+  height: 70vh;
+  width: 50vw !important;
+}
+.box h2 {
+  padding: 10%;
+  font-weight: 70;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: large;
+}
+.box h1 {
+  font-size: xxx-large;
+}
+@media (max-width: 768px) {
+  .box {
+    width: 80vw !important;
+    height: 55vh !important;
+  }
+  .box h1 {
+    font-size: xx-large;
+  }
+}
+@media (max-height:768px) {
+  .box h1 {
+    font-size: x-large;
+  }
+  .box h2 {
+    padding: 2%;
+    font-size: medium;
+  }
+}
